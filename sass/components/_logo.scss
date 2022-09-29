@@ -1,0 +1,35 @@
+.logo {
+  display: block;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.header__logo {
+  margin-right: 97px;
+}
+
+.logo__header {
+  color: #000000;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.logo__footer {
+  color: #ffffff;
+}

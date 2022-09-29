@@ -1,0 +1,29 @@
+.samples {
+  @include section($padding: 94px);  
+  padding-top: 0;
+  
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+  
+  .samples__item {
+    position: relative;
+    z-index: 1;
+  }
+  .samples__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+  
+    @include center;
+  
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+  }

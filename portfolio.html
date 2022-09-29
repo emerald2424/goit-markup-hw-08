@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container flex">
+        <nav class="nav">
+          <a class="logo header__logo" href="./index.html"
+            >Web<span class="logo__header">Studio</span></a
+          >
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="header__contacts">
+          <li>
+            <a class="header__contact-link" href="mailto:info@devstudio.com">
+              <svg class="header__contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header__contact-link" href="tel:+380961111111">
+              <svg class="header__contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Projects</h1>
+          <!--Buttons-->
+          <ul class="filter">
+            <li class="filter__item">
+              <button class="filter__button" type="button">All</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Web-sites</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Apps</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Design</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <!--Projects-->
+          <ul class="flex-container">
+            <li class="project-box">
+              <a href="" class="project-link">
+                <div class="project-image">
+                  <img
+                    src="./portfolio/technoduck.jpg"
+                    alt="Laptop with a display of a project page"
+                  />
+                  <div class="overlay-text">
+                    <p>
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="box-description">
+                  <h3 class="project-title">Technoduck</h3>
+                  <p class="project-category">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img
+                  src="./portfolio/poster.jpg"
+                  alt="A moment of a basketball game"
+                />
+                <div class="box-description">
+                  <h3 class="project-title">
+                    Poster New Orlean vs Golden Star
+                  </h3>
+                  <p class="project-category">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img
+                  src="./portfolio/seafood.jpg"
+                  alt="The seafood restaurant logo"
+                />
+                <div class="box-description">
+                  <h3 class="project-title">Seafood Restaurant</h3>
+                  <p class="project-category">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img src="./portfolio/project-prime.jpg" alt="Headphones" />
+                <div class="box-description">
+                  <h3 class="project-title">Project Prime</h3>
+                  <p class="project-category">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img src="./portfolio/project-boxes.jpg" alt="Carton boxes" />
+                <div class="box-description">
+                  <h3 class="project-title">Project Boxes</h3>
+                  <p class="project-category">Apps</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img
+                  src="./portfolio/inspiration.jpg"
+                  alt="Monitor display of a project page"
+                />
+                <div class="box-description">
+                  <h3 class="project-title">Inspiration has no Borders</h3>
+                  <p class="project-category">Web-site</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img src="./portfolio/limited-edition.jpg" alt="An open book" />
+                <div class="box-description">
+                  <h3 class="project-title">Limited Edition</h3>
+                  <p class="project-category">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img src="./portfolio/project-lab.jpg" alt="A LAB tag" />
+                <div class="box-description">
+                  <h3 class="project-title">Project LAB</h3>
+                  <p class="project-category">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-box">
+              <a href="" class="project-link">
+                <img
+                  src="./portfolio/limited-edition.jpg"
+                  alt="A laptop with a project page"
+                />
+                <div class="box-description">
+                  <h3 class="project-title">Growing Business</h3>
+                  <p class="project-category">Apss</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div>
+          <a class="logo footer__logo" href="./index.html"
+            >Web<span class="logo__footer">Studio</span></a
+          >
+          <address class="footer__address">
+            695 Park Ave, New York, NY 10065,<br />United States
+          </address>
+          <ul>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts" href="tel:+12127724150"
+                >+1 212-772-4150</a
+              >
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <h2 class="footer__title">Find us on</h2>
+          <ul class="socials">
+            <li>
+              <a class="socials__link socials__link--white" href="">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--white" href="">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--white" href="">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials__link socials__link--white" href="">
+                <svg class="socials__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscribe">
+          <strong class="footer__title">Subscribe to the newsletter</strong>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder=" "
+              autocomplete="off"
+            />
+            <label class="subscribe__label" for="mail">E-mail</label>
+            <button class="btn subscribe__btn" type="submit">
+              Subscribe
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

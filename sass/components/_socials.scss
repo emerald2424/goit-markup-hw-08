@@ -1,0 +1,35 @@
+.socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .team__socials {
+    justify-content: center;
+  }
+  
+  .socials__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+  
+    transition: fill var(--animation), background-color var(--animation);
+  }
+  
+  .socials__link--grey {
+    fill: #afb1b8;
+  }
+  
+  .socials__link:hover,
+  .socials__link:focus {
+    fill: #ffffff;
+    background-color: var(--accent-color);
+  }
+  
+  .socials__icon {
+    width: 20px;
+    height: 20px;
+  }

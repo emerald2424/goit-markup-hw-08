@@ -1,0 +1,10 @@
+@mixin section($padding: 60px) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
