@@ -6,15 +6,18 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-
-  @media screen and (max-width: 1199px) {
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 .header__logo {
-  margin-right: 97px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__header {
@@ -22,12 +25,20 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 7px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+  }
 
   @media screen and (max-width: 1199px) {
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
   }
+
+  // @media screen and (max-width: 1199px) {
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 }
 
 .logo__footer {

@@ -60,6 +60,16 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -194,7 +204,11 @@
           <ul class="flex">
             <li class="samples__item">
               <img
-                src="./images/box_1.jpg"
+                srcset="
+                  ./images/samples/box_1-@1x.jpg 1x,
+                  ./images/samples/box_1-@2x.jpg 2x
+                "
+                src="./images/samples/box_1-@1x.jpg"
                 alt="Using a keyboard and a tablet"
                 width="370"
               />
@@ -204,7 +218,11 @@
             </li>
             <li class="samples__item">
               <img
-                src="./images/box_2.jpg"
+                srcset="
+                  ./images/samples/box_2-@1x.jpg 1x,
+                  ./images/samples/box_2-@2x.jpg 2x
+                "
+                src="./images/samples/box_2-@1x.jpg"
                 alt="Using a smartphone and a laptop"
                 width="370"
               />
@@ -213,7 +231,15 @@
               </div>
             </li>
             <li class="samples__item">
-              <img src="./images/box_3.jpg" alt="Using a tablet" width="370" />
+              <img
+                srcset="
+                  ./images/samples/box_3-@1x.jpg 1x,
+                  ./images/samples/box_3-@2x.jpg 2x
+                "
+                src="./images/samples/box_3-@1x.jpg"
+                alt="Using a tablet"
+                width="370"
+              />
               <div class="samples__overlay">
                 <p>DESIGN SOLUTIONS</p>
               </div>
@@ -228,10 +254,63 @@
           <h2 class="section__title">Our Team</h2>
           <ul class="flex-container">
             <li class="team__card">
-              <img
-                src="./images/team_card_1.jpg"
-                alt="Product designer Christopher Walker"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_1_lg-@1x.webp 1x,
+                    ./images/team/team_1_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_1_lg-@1x.jpg 1x,
+                    ./images/team/team_1_lg-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_1_md-@1x.webp 1x,
+                    ./images/team/team_1_md-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_1_md-@1x.jpg 1x,
+                    ./images/team/team_1_md-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_1_sm-@1x.webp 1x,
+                    ./images/team/team_1_sm-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_1_sm-@1x.jpg 1x,
+                    ./images/team/team_1_sm-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/team_1_sm-@1x.jpg"
+                  alt="Product designer Christopher Walker"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__mate">Christopher Walker</h3>
                 <p class="team__position">Product Designer</p>
@@ -268,10 +347,63 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/team_card_2.jpg"
-                alt="Frontend developer Kylie Evans"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_2_lg-@1x.webp 1x,
+                    ./images/team/team_2_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_2_lg-@1x.jpg 1x,
+                    ./images/team/team_2_lg-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_2_md-@1x.webp 1x,
+                    ./images/team/team_2_md-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_2_md-@1x.jpg 1x,
+                    ./images/team/team_2_md-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_2_sm-@1x.webp 1x,
+                    ./images/team/team_2_sm-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_2_sm-@1x.jpg 1x,
+                    ./images/team/team_2_sm-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/team_2_sm-@1x.jpg"
+                  alt="Frontend developer Kylie Evans"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__mate">Kylie Evans</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -308,7 +440,63 @@
               </div>
             </li>
             <li class="team__card">
-              <img src="./images/team_card_3.jpg" alt="Marketing Ryan Harris" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_3_lg-@1x.webp 1x,
+                    ./images/team/team_3_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_3_lg-@1x.jpg 1x,
+                    ./images/team/team_3_lg-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_3_md-@1x.webp 1x,
+                    ./images/team/team_3_md-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_3_md-@1x.jpg 1x,
+                    ./images/team/team_3_md-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_3_sm-@1x.webp 1x,
+                    ./images/team/team_3_sm-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_3_sm-@1x.jpg 1x,
+                    ./images/team/team_3_sm-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/team_3_sm-@1x.jpg"
+                  alt="Marketing Ryan Harris"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__mate">Ryan Harris</h3>
                 <p class="team__position">Marketing</p>
@@ -345,10 +533,63 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                src="./images/team_card_4.jpg"
-                alt="UI Designer Tyler Moore"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_4_lg-@1x.webp 1x,
+                    ./images/team/team_4_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team_4_lg-@1x.jpg 1x,
+                    ./images/team/team_4_lg-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_4_md-@1x.webp 1x,
+                    ./images/team/team_4_md-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team_4_md-@1x.jpg 1x,
+                    ./images/team/team_4_md-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_4_sm-@1x.webp 1x,
+                    ./images/team/team_4_sm-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team_4_sm-@1x.jpg 1x,
+                    ./images/team/team_4_sm-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/team_4_sm-@1x.jpg"
+                  alt="UI Designer Tyler Moore"
+                />
+              </picture>
+
               <div class="team__description">
                 <h3 class="team__mate">Tyler Moore</h3>
                 <p class="team__position">UI Designer</p>
@@ -443,59 +684,62 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__contacts-block">
-          <a class="logo footer__logo" href="./index.html"
-            >Web<span class="logo__footer">Studio</span></a
-          >
-          <address class="footer__address">
-            695 Park Ave, New York, NY 10065,<br />United States
-          </address>
-          <ul class="footer__contact-list">
-            <li class="footer__contacts-item">
-              <a class="footer__contacts" href="tel:+12127724150"
-                >+1 212-772-4150</a
-              >
-            </li>
-            <li class="footer__contacts-item">
-              <a class="footer__contacts" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-          </ul>
+        <div class="footer__block">
+          <div class="footer__contacts-block">
+            <a class="logo footer__logo" href="./index.html"
+              >Web<span class="logo__footer">Studio</span></a
+            >
+            <address class="footer__address">
+              695 Park Ave, New York, NY 10065,<br />United States
+            </address>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a class="footer__contacts" href="tel:+12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+              <li class="footer__contacts-item">
+                <a class="footer__contacts" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__socials-block">
+            <h2 class="footer__title">Find us on</h2>
+            <ul class="socials footer__socials">
+              <li>
+                <a class="socials__link socials__link--white" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link socials__link--white" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link socials__link--white" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials__link socials__link--white" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__socials">
-          <h2 class="footer__title">Find us on</h2>
-          <ul class="socials">
-            <li>
-              <a class="socials__link socials__link--white" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials__link socials__link--white" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials__link socials__link--white" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socials__link socials__link--white" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <!--Footer-subscribe-block-->
         <div class="subscribe">
           <strong class="footer__title">Subscribe to the newsletter</strong>
@@ -520,6 +764,57 @@
       </div>
     </footer>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a class="menu-link" href="./index.html">Studio</a></li>
+        <li><a class="menu-link" href="./portfolio.html">Portfoilo</a></li>
+        <li><a class="menu-link" href="">Contacts</a></li>
+      </ul>
+
+      <ul class="">
+        <li>
+          <a class="mobile-menu-phone" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">Facebook</a>
+        </li>
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">Instagram</a>
+        </li>
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">Twitter</a>
+        </li>
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <!-- Mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
